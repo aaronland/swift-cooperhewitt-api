@@ -1,22 +1,22 @@
 import Foundation
 
-struct CooperHewittAPIResponse {
+public struct CooperHewittAPIResponse {
     var Data: Data
     var URLResponse: URLResponse
 }
 
-struct CooperHewittAPIError: Error {
+public struct CooperHewittAPIError: Error {
     var Code: Int
     var Message: String
 }
 
-enum CooperHewittAPIErrors : Error {
+public enum CooperHewittAPIErrors : Error {
     case missingData
     case missingResponse
     case unknownError
 }
 
-class CooperHewittAPI {
+public class CooperHewittAPI {
     
     public let auth_url = "https://collection.cooperhewitt.org/api/oauth2/authenticate/"
     public let token_url = "https://collection.cooperhewitt.org/api/oauth2/access_token/"
