@@ -1,13 +1,13 @@
 import Foundation
 
 public struct CooperHewittAPIResponse {
-    var Data: Data
-    var URLResponse: URLResponse
+    public var Data: Data
+    public var URLResponse: URLResponse
 }
 
 public struct CooperHewittAPIError: Error {
-    var Code: Int
-    var Message: String
+    public var Code: Int
+    public var Message: String
 }
 
 public enum CooperHewittAPIErrors : Error {
@@ -24,11 +24,11 @@ public class CooperHewittAPI {
     var endpoint = "https://api.collection.cooperhewitt.org/rest/"
     var access_token: String?
     
-    init(access_token: String) {
+    public init(access_token: String) {
         self.access_token = access_token
     }
     
-    init(endpoint: String, access_token: String) {
+    public init(endpoint: String, access_token: String) {
         self.endpoint = endpoint
         self.access_token = access_token
     }
