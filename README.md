@@ -2,6 +2,10 @@
 
 Swift package for working with the Cooper Hewitt API.
 
+## Important
+
+This is work in progress. Proper documentation to follow.
+
 ## Example
 
 ```
